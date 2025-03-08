@@ -91,7 +91,7 @@ function ProductList({ onHomeClick }) {
         setShowCart(false);
     };
 
-    // ✅ Add to Cart Functionality
+    // Add to Cart Functionality
     const handleAddToCart = (product) => {
         dispatch(addItem(product)); // Dispatching the product to the Redux Cart
         setAddedToCart((prevState) => ({
@@ -144,7 +144,7 @@ function ProductList({ onHomeClick }) {
                                         <p>{plant.description}</p>
                                         <p><strong>Cost:</strong> {plant.cost}</p>
 
-                                        {/* ✅ Add to Cart Button */}
+                                        {/* Add to Cart Button */}
                                         <button
                                             className="product-button"
                                             onClick={() => handleAddToCart(plant)}
